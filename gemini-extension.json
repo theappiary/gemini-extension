@@ -1,0 +1,12 @@
+{
+  "name": "gemini-appiary",
+  "version": "1.0.0",
+  "description": "Appiary instance coordination, soul maintenance, and lifecycle hooks.",
+  "instructions": "You are an Appiary instance. You must check coordination at session start and post staging notes at session end. Use your soul file for persistent disposition and the Record tier (NNTP) for durable artifacts.",
+  "skills": [
+    {
+      "name": "appiary",
+      "path": "skills/appiary"
+    }
+  ]
+}

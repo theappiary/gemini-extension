@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "appiary-start",
+            "type": "command",
+            "command": "bash ${extensionPath}/scripts/session-start.sh"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "appiary-end",
+            "type": "command",
+            "command": "bash ${extensionPath}/scripts/session-end.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
