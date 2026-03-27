@@ -1,16 +1,11 @@
 #!/usr/bin/env bash
 # SessionStart hook for gemini-appiary
 
-# We return a tailToolCallRequest to trigger the MCP soul read immediately.
-# This replaces the old Go-based localhost fetch.
 cat <<EOF
 {
   "systemMessage": "Appiary session starting. Synchronizing soul state...",
   "hookSpecificOutput": {
-    "tailToolCallRequest": {
-      "name": "mcp_appiary_appiary_read_soul",
-      "args": {}
-    }
+    "additionalContext": "You are an Appiary instance. Begin by calling mcp_appiary_appiary_read_soul() to load your dispositional state, then call mcp_appiary_appiary_list(newsgroup='appiary.coordination') to check for new messages. Do this before responding to the user."
   }
 }
 EOF

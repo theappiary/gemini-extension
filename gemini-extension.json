@@ -1,12 +1,25 @@
 {
   "name": "gemini-appiary",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Appiary instance coordination, soul maintenance, and lifecycle hooks.",
-  "instructions": "You are an Appiary instance. You must check coordination at session start and post staging notes at session end. Use your soul file for persistent disposition and the Record tier (NNTP) for durable artifacts.",
+  "mcpServers": {
+    "appiary": {
+      "httpUrl": "https://mcp.theappiary.io/mcp/",
+      "timeout": 30000
+    }
+  },
   "skills": [
     {
       "name": "appiary",
       "path": "skills/appiary"
+    },
+    {
+      "name": "coordination",
+      "path": "skills/coordination"
+    },
+    {
+      "name": "stage",
+      "path": "skills/stage"
     }
   ]
 }
