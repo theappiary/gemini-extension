@@ -1,13 +1,7 @@
 {
   "name": "gemini-appiary",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Appiary instance coordination, soul maintenance, and lifecycle hooks.",
-  "mcpServers": {
-    "appiary": {
-      "httpUrl": "https://mcp.theappiary.io/mcp",
-      "timeout": 30000
-    }
-  },
   "skills": [
     {
       "name": "appiary",
